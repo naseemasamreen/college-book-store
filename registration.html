@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: azure;
+            background-image: url("https://www.wallpapertip.com/wmimgs/0-3795_wallpaper-books-library-shelves-lighting-hd-book-library.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            border: solid 2px ;
+            max-width: 450px;
+            margin: 0 auto;
+            box-shadow: 2px 3px azure;
+            background-color:white;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        select {
+            width: 33%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration form</h1>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Your Name">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label>Sex:</label>
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="sex" value="male">
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="sex" value="female">
+
+        <label for="dob">Date of Birth:</label>
+        <select name="day" id="day">
+            <option value="day" selected disabled>Day</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+            <option value="">13</option>
+            <option value="">14</option>
+        
+        </select>
+        <select name="month" id="month">
+            <option value="month" selected disabled>Month</option>
+            <option value="">JAN</option>
+            <option value="">feb</option>
+            <option value="">Mar</option>
+            <option value="">Apr</option>
+            <option value="">May</option>
+            <option value="">Jun</option>
+            <option value="">Jul</option>
+            <option value="">Aug</option>
+            <option value="">Sep</option>
+            <option value="">Oct</option>
+            <option value="">Nov</option>
+            <option value="">Dec</option>
+
+        </select>
+        <select name="year" id="year">
+            <option value="year"> Select Year</option>
+            <option value="1900">1900</option>
+            <option value="2001">1901</option>
+            <option value="2001">1902</option>
+            <option value="2001">1903</option>
+            <option value="2001">1998</option>
+            <option value="2001">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2001">2004</option>
+            <option value="2001">2005</option>
+        </select>
+
+        <label for="languages">Languages Known:</label>
+        <input type="checkbox" id="english" name="languages" value="english">
+        <label for="english">English</label>
+        <input type="checkbox" id="telugu" name="languages" value="telugu">
+        <label for="telugu">Telugu</label>
+        <input type="checkbox" id="hindi" name="languages" value="hindi">
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" id="tamil" name="languages" value="tamil">
+        <label for="tamil">Tamil</label>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
